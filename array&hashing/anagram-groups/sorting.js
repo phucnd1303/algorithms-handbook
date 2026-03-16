@@ -15,8 +15,6 @@ class Solution {
       result[orderedCharacters].push(strs[i]);
     }
 
-    console.log(result);
-
     return Object.values(result);
   }
 }
