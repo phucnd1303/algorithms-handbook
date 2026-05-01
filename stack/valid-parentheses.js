@@ -15,12 +15,8 @@ class Solution {
       sortedStr = sortedStr.replace('{}', '');
       sortedStr = sortedStr.replace('[]', '');
 
-      if (!sortedStr) {
-        return true;
-      }
+      return sortedStr === '';
     }
-
-    return false;
   }
 }
 
