@@ -10,13 +10,15 @@ class Solution {
       sortedStr.includes('{}') ||
       sortedStr.includes('[]');
 
-    while (hasParentheses) {
-      sortedStr = sortedStr.replace('()', '');
-      sortedStr = sortedStr.replace('{}', '');
-      sortedStr = sortedStr.replace('[]', '');
-
-      return sortedStr === '';
+    if (!hasParentheses) {
+      return false;
     }
+
+    sortedStr = sortedStr.replace('()', '');
+    sortedStr = sortedStr.replace('{}', '');
+    sortedStr = sortedStr.replace('[]', '');
+
+    return sortedStr === '';
   }
 }
 
